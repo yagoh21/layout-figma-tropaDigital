@@ -1,38 +1,674 @@
-.App {
-  text-align: center;
+*{
+  box-sizing:content-box;
+  padding:0%;
+  margin: 15px;
+ 
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center{
+position: fixed;
+  width: 260px;
+  height: 1096px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(255, 255, 255, 1);
+  
+
+
+
+}
+.main{
+padding: 0px 10px;
+width: 20%;
+background: #E5E5E5;
+min-height: auto;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu h3{
+color: black;
+
+}
+
+.menu a{
   color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px; 
+  
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+    color: rgb(3, 3, 3);
+      text-decoration:wavy ;
+      padding: 10px 500px;
+      
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bot{
+position:fixed;
+  width: 211px;
+  height: 47px;
+  left: 250px;
+  top: 10px;
+
+  font-family: 'Advent Pro';
+  font-style: Mixed;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 12%;
+  /* identical to box height, or 47px */
+
+  text-align: center;
+
+  color: rgba(141, 141, 141, 0.44);
+}
+
+
+/**
+*estilização do botao inicio
+
+*/
+
+
+
+.inicio{
+  
+  position: absolute;
+    width: 211px;
+    height: 50px;
+    left: 0px;
+    top: 157px;
+    text-align: center;
+    color: #ffffff;
+   
+
+
+  text-shadow: 1px 1px 1px #000;
+  background-color:rgba(46, 175, 178, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  border-radius: 10px 0px 0px 10px;
+
+  
+}
+
+
+.inicio:hover {
+  background-color:rgba(243, 243, 243, 1);
+}
+
+
+.inicio:active {
+  box-shadow: inset #02fff2, inset #ffffff,;
+}
+
+
+/**
+*estilização do botao relatorio
+
+*/
+
+.relatorio{
+  position: absolute;
+    width: 211px;
+    height: 50px;
+    left: 0px;
+    top: 220px;
+    text-align: center;
+    color: #FFFFFF;
+  
+    background: #2EAFB2;
+    border-radius: 5px;
+
+      text-shadow: 1px 1px 1px #000;
+        background-color: #2EAFB2;
+        background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        border-radius: 10px 0px 0px 10px;
+}
+
+.relatorio:hover {
+  background-color: rgba(243, 243, 243, 1);
+}
+
+
+.relatorio:active {
+  box-shadow: inset #02fff2, inset #ffffff, ;
+}
+
+
+/**
+*estilização do botao contatos1
+
+*/
+.contatos1{
+position: absolute;
+  width: 211px;
+  height: 50px;
+  left: 0px;
+  top: 280px;
+  text-align: center;
+  color: #FFFFFF;
+
+  background: #2EAFB2;
+    border-radius: 5px;
+  
+    text-shadow: 1px 1px 1px #000;
+    background-color: #2EAFB2;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.contatos1:hover {
+  background-color: rgba(243, 243, 243, 1);
+}
+
+
+.contatos1:active {
+  box-shadow: inset #02fff2, inset #ffffff, ;
+}
+
+/**
+*estilização do botao contatos1
+
+*/
+
+.contatos2 {
+  position: absolute;
+  width: 211px;
+  height: 50px;
+  left: 0px;
+  top: 340px;
+  text-align: center;
+color: #FFFFFF;
+
+  background: #2EAFB2;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px #000;
+    background-color: #2EAFB2;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contatos2:hover {
+  background-color: #ffffff;
+}
+
+
+.contatos2:active {
+  box-shadow: inset #02fff2, inset #ffffff, ;
+}
+
+
+/**
+*estilização do botao contatos3
+
+*/
+.contatos3 {
+  position: absolute;
+  width: 211px;
+  height: 50px;
+  left: 0px;
+  top: 400px;
+  text-align: center;
+  color: #FFFFFF;
+
+  background: #2EAFB2;
+  border-radius: 5px;
+
+  text-shadow: 1px 1px 1px #000;
+    background-color: #2EAFB2;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.contatos3:hover {
+  background-color: #ffffff;
+}
+
+
+.contatos3:active {
+  box-shadow: inset #02fff2, inset #ffffff, ;
+}
+
+.linha{
+  height: 1px;
+    width: 1549px;
+    left: 307px;
+    top: 200px;
+    border-radius: 10px;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+.imagem1 {
+
+position: absolute;
+  width: 190px;
+  height: 56.88px;
+  left: 20px;
+  top: 50px;
+}
+
+.imagem2 {
+
+  margin: 10px;
+  top :150px;
+  Width: 463.59px;
+    Height: 141px;
+    left: 327.42px;
+    border-radius: 6px;
+}
+
+.imagem3 {
+ 
+  margin: 10px;
+  Width: 463.59px;
+    Height: 141px;
+    top: 200px;
+    left: 300px;
+    border-radius: 6px;
+}
+
+.imagem4 {
+  Width: 463.59px;
+    Height: 141px;
+    left: 500px;
+    top: 265px;
+    border-radius: 6px;
+    
+}
+
+.imagem5 {
+  margin: 10px;
+  Width: 463.59px;
+  Height: 141px;
+  top: 500px;
+  left: 800px;
+  border-radius: 6px;
+
+}
+
+.texto1 {
+  font-size: 14px;
+  text-align: auto;
+  width: 463.59px;
+  height:30px;
+ font-family:'Advent Pro';
+
+
+  font-style: normal;
+
+  color: #000000;
+}
+
+.texto2 {
+
+font-style: normal;
+  font-family: 'Advent Pro';
+  position: absolute;
+  width: 490px;
+  height: 50px;
+  left: -10px;
+  top: 150px;
+  color: #000000;
+  font-size: 14px;
+  text-align: relative;
+}
+
+.texto3{
+  
+  font-style: normal;
+    font-family: 'Advent Pro';
+    position: absolute;
+    width: 490px;
+    height: 50px;
+    left: -530px;
+    top: 180px;
+    color: #8d8d8d;
+    font-size: 14px;
+    text-align: relative;
+  
+   
+}
+
+.borda1{
+position: absolute;
+  width: 500px;
+  height: 228px;
+  left: -20px;
+  top: 50px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+}
+
+.borda2{
+  position: absolute;
+    width: 500px;
+    height: 228px;
+    left: -20px;
+    top: 300px;
+  
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+}
+
+.borda3 {
+position: relative;
+  width: 500px;
+  height: 228px;
+  left: 500px;
+  top: 265px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+}
+
+.lorem{
+  font-style: normal;
+  font-family: 'Advent Pro';
+  position:absolute;
+    width: 470px;
+    height: 20px;
+    left: 0px;
+    top: 180px;
+    color: #8d8d8d;
+    font-size: 15px;
+    text-align: auto;
+    
+}
+
+.calendario{
+  position: absolute;
+    width: 101.94px;
+    height: 27px;
+    left: 350px;
+    top: 5px;
+  
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.titulo{
+  font-size: 30px;
+  width: -15px;
+}
+
+.imagem8{
+  position: auto;
+    margin: 10px;
+    Width: 463.59px;
+    Height: 141px;
+    top: -410px;
+    left: 500px;
+    border-radius: 6px;
+}
+
+.texto7{
+
+  position: relative;
+  font-size: 14px;
+    text-align:left;
+    width: 464px;
+    height: 40px;
+    font-family: 'Advent Pro';
+  
+  
+    font-style: normal;
+  
+    color: #000000;
+}
+
+.borda7{
+    position: relative;
+  width: 500px;
+  height: 228px;
+  left: 500px;
+  top: -710px;
+    background: #FFFFFF;
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+      border-radius: 6px;
+}
+
+.subtitulo{
+  position: relative;
+    font-size: 15px;
+    text-align: left;
+    width: 464px;
+    height: 10px;
+    font-family: 'Advent Pro';
+    top: -35px;
+  
+  
+    font-style: normal;
+  
+    color: #8d8d8d;
+}
+
+.subtitulo1{
+    position: relative;
+      font-size: 15px;
+      text-align: left;
+      width: 464px;
+      height: 10px;
+      font-family: 'Advent Pro';
+      top: -15px;
+    
+    
+      font-style: normal;
+    
+      color: #000000;
+}
+
+.borda4{
+  position: relative;
+    width: 500px;
+    height: 228px;
+    left: 1025px;
+    top: -227px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+}
+
+.texto4{
+ 
+    font-size: 14px;
+    
+    width: 464px;
+    height: 40px;
+    font-family: 'Advent Pro';
+    
+    left: auto;
+  
+  
+    font-style: normal;
+  
+    color: #000000;
+}
+
+.subtitulo2{
+  position: relative;
+    font-size: 15px;
+    text-align: left;
+    width: 464px;
+    height: 10px;
+    font-family: 'Advent Pro';
+    top: -35px;
+  
+  
+    font-style: normal;
+  
+color: #8d8d8d;
+}
+
+.titulo10{
+
+    position: relative;
+      font-size: 14px;
+      text-align: left;
+      width: 464px;
+      height: 40px;
+      font-family: 'Advent Pro';
+      top: -15px;
+    
+    
+      font-style: normal;
+    
+      color: #8d8d8d;
+}
+
+.imagem6{
+  
+    margin: 10px;
+      Width: 463.59px;
+      Height: 141px;
+      top: 100px;
+      left: -150px;
+      border-radius: 6px;
+}
+
+.texto5{
+    font-size: 14px;
+      text-align: left;
+      width: 464px;
+      height: 40px;
+      font-family: 'Advent Pro';
+    
+      left: auto;
+    
+    
+      font-style: normal;
+    
+      color: #000000;
+}
+
+.borda5{
+  position: relative;
+    width: 500px;
+    height: 228px;
+    left: 1025px;
+    top: -227px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+}
+
+.subtitulo3{
+  position: relative;
+    font-size: 15px;
+    text-align: left;
+    width: 464px;
+    height: 10px;
+    font-family: 'Advent Pro';
+    top: -35px;
+  
+  
+    font-style: normal;
+  
+    color: #8d8d8d;
+}
+
+
+.btnbtn-whitebtn-animate1{
+  position: relative;
+  left: -5px;
+  top: 10px;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  border: 6px;
+  bottom:auto;
+  box-shadow: #000;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Advent Pro';
+    
+
+}
+
+
+
+.text-box1{
+  position: absolute;
+    width: 211px;
+    height: 50px;
+    left: 15px;
+    top: 475px;
+    text-align: center;
+    color: #FFFFFF;
+  
+    background: #2EAFB2;
+    border-radius: 5px;
+  
+    text-shadow: 1px 1px 1px #000;
+    background-color: #2EAFB2;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 10px 0px 0px 10px;
+
+  
+ 
+
+}
+
+.text-box1:hover {
+  background-color: rgba(243, 243, 243, 1);
+}
+
+
+.text-box1:active {
+  box-shadow: inset #02fff2, inset #ffffff, ;
+}
+
+
+
+.btnbtn-whitebtn-animate2{
+position: relative;
+  left: -5px;
+  top: 10px;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  border: 6px;
+  bottom: auto;
+  box-shadow: #000;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Advent Pro';
+}
+
+.botao1{
+    position: relative;
+      left: -5px;
+      top: 10px;
+      width: 200px;
+      height: 50px;
+      color: #ffffff;
+      border: 6px;
+      bottom: auto;
+      box-shadow: #000;
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Advent Pro';
 }
